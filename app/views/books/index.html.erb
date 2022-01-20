@@ -1,0 +1,23 @@
+<h1>Books</h1>
+ <table>
+  <thead>
+    <tr>
+     <th>Title</th>
+     <th>Body</th>
+     <th></th>
+    </tr>
+  </thead>
+  <tbody>
+     <td>aaa</td>
+     <td>aaa</td>
+     <td>aaa</td>
+  </tbody>
+ </table>
+ <h2>New book</h2>
+ <%= form_with url: books_path, local:true do |f| %>
+  <P>Title</P>
+  <%= f.text_field :title %>
+  <P>Body</P>
+  <%= f.text_area :body %>
+  <%= f.submit '投稿' %>
+ <% end %>
